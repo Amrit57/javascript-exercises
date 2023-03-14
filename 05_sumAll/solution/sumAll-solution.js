@@ -10,7 +10,7 @@ const sumAll = function (min, max) {
   for (let i = min; i < max + 1; i++) {
     sum += i;
   }
-  return sum;
+  return console.log(sum);
 };
-
+sumAll(4,0);
 module.exports = sumAll;
