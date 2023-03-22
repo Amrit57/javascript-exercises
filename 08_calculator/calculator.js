@@ -7,23 +7,29 @@ const subtract = function(num1, num2) {
 };
 subtract(10,4);
 
-const sum = function([...args]) {
-   let sums=0;
+const sum = function (args) {
+  let sums=0;
     for(i = 0; i< args.length; i++){
       sums += args[i]
     }
-    console.log(sums);
  return sums;
 };
-sum([1,3,5,7,9]);
+sum([7,11]);
 
-const multiply = function() {
-
+const multiply = function(args) {
+  let multi=1;
+  for(i = 0; i< args.length; i++){
+    multi*= args[i]
+  }
+  return multi;
 };
+multiply([2,4,6,8,10,12,14]);
 
-const power = function() {
-	
+const power = function(num, power) {
+  let total = Math.pow(num,power);
+  return total;
 };
+power(4,3)
 
 const factorial = function() {
 	
