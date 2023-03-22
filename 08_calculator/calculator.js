@@ -29,12 +29,20 @@ const power = function(num, power) {
   let total = Math.pow(num,power);
   return total;
 };
-power(4,3)
+power(4,3);
 
-const factorial = function() {
-	
+const factorial = function(num) {
+  let fac = 1;
+if(num === 0 || num === 1){
+  return fac;
+}else if (num>0){
+  for(i=num; i>=1; i--){
+    fac = fac * i;
+  } 
+  return fac;
+}
 };
-
+factorial(10);
 // Do not edit below this line
 module.exports = {
   add,
