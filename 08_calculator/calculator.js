@@ -1,10 +1,11 @@
 const add = function(num1, num2) {
 	return num1+num2;
 };
-add(2,6)
-const subtract = function() {
-	
+add(2,6);
+const subtract = function(num1, num2) {
+	return num1-num2;
 };
+subtract(10,4);
 
 const sum = function() {
 	
